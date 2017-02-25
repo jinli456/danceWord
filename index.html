@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery文字波浪动画代码</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<script type="text/javascript" src="lib/jquery.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="lib/d.css">
+		<script type="text/javascript" src="lib/d.js"></script>
+		<style>
+			html {
+				background: #d9d9d9;
+			}
+			html, body {
+				padding: 0;
+				margin: 0;
+			}
+			small {
+				color: green;
+			}
+			p {
+				font-size: 18px;
+			}
+			.page {
+				width: 800px;
+				margin: 0 auto;
+				background: white;
+				padding: 0 15px;
+			}
+			@media screen and (max-width: 800px) {
+				.page {
+					width: 100%;
+					box-sizing: border-box;
+				}
+			}
+		/*create by luoliang~*/
+		</style>
+		<script>
+			/*$.extend(danceword, {
+			 interval : 100,
+			 loop : true
+			 })*/
+		</script>
+	</head>
+	<body>
+		<div class="page">
+			<div class="showcase">
+				<small>/* add class: danceWord-s1 */</small>
+				<h1 class="danceWord-s1">这里提供了10种效果，你喜欢哪一种？</h1>
+			</div>
+			<div class="showcase">
+				<small>/* add class: danceWord-s2 */</small>
+				<p class="danceWord-s2">
+					我喜欢你是寂静的，仿佛你消失了一样，我喜欢你是寂静的，仿佛你消失了一样，我喜欢你是寂静的，仿佛你消失了一样，
+				</p>
+			</div>
+			<div class="showcase">
+				<small>/* add class: danceWord-s3 */</small>
+				<p class="danceWord-s3">
+					你从远处聆听我，我的声音却无法触及你。你从远处聆听我，我的声音却无法触及你。你从远处聆听我，我的声音却无法触及你。
+				</p>
+			</div>
+			<div class="showcase">
+				<small>/* add class: danceWord-s4 */</small>
+				<p class="danceWord-s4">
+					好像你的双眼已经飞离去，如同一个吻，封缄了你的嘴。好像你的双眼已经飞离去，如同一个吻，封缄了你的嘴。
+				</p>
+			</div>
+			<div class="showcase">
+				<small>/* add class: danceWord-s5 */</small>
+				<p class="danceWord-s5">
+					如同所有的事物充满了我的灵魂，如同所有的事物充满了我的灵魂，如同所有的事物充满了我的灵魂，
+				</p>
+			</div>
+			<div class="showcase">
+				<small>/* add class: danceWord-s6 */</small>
+				<p class="danceWord-s6">
+					你从所有的事物中浮现，充满了我的灵魂。你从所有的事物中浮现，充满了我的灵魂。你从所有的事物中浮现，充满了我的灵魂。
+				</p>
+			</div>
+			<div class="showcase">
+				<small>/* add class: danceWord-s7 */</small>
+				<p class="danceWord-s7">
+					你像我的灵魂，一只梦的蝴蝶。你如同忧郁这个词。你像我的灵魂，一只梦的蝴蝶。你如同忧郁这个词。你像我的灵魂，一只梦的蝴蝶。
+				</p>
+			</div>
+			<div class="showcase">
+				<small>/* add class: danceWord-s8 */</small>
+				<p class="danceWord-s8">
+					我喜欢你是寂静的，好像你已远去。我喜欢你是寂静的，好像你已远去。我喜欢你是寂静的，好像你已远去。
+				</p>
+			</div>
+			<div class="showcase">
+				<small>/* add class: danceWord-s9 */</small>
+				<p class="danceWord-s9">
+					你听起来像在悲叹，一只如鸽悲鸣的蝴蝶。你听起来像在悲叹，一只如鸽悲鸣的蝴蝶。你听起来像在悲叹，一只如鸽悲鸣的蝴蝶。你听起来像在悲叹，一只如鸽悲鸣的蝴蝶。
+				</p>
+			</div>
+			<div class="showcase">
+				<small>/* add class: danceWord-s10 */</small>
+				<p class="danceWord-s10">
+					你从远处听见我，我的声音无法触及你,你从远处听见我，我的声音无法触及你,你从远处听见我，我的声音无法触及你。
+				</p>
+				<p class="danceWord-s10">
+					When the whole world is about to rain, let us make it clear in our heart together.
+				</p>
+			</div>
+			<hr>
+			<h2>Usage Tips</h2>
+			<ul style="margin-bottom:0;padding-bottom:32px;">
+				<li>
+					1.You need link d.css and d.js after jquery.
+				</li>
+				<li>
+					2.Just add class as danceWord-s* in label, such as div,p,span,h1,h2...(pure text in label)
+				</li>
+				<li>
+					3.If you are not content with default animation, you can extend it in script <b>$.extend(danceword,{interval:200,loop:true})</b>.
+				</li>
+				<li>
+					4.Avoid reuse onload function in you page.
+				</li>
+				<li>
+					5.Avoid use any label in label that contain danceWord-s*.
+				</li>
+				<li>
+					6.DanceWord is friendly to most browser and mobile device.
+				</li>
+			</ul>
+		</div>
+		<div style="text-align:center;">
+<p>来源:<a href="http://www.mycodes.net/" target="_blank">源码之家</a></p>
+</div>
+	</body>
+</html>
+
